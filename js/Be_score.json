@@ -1,0 +1,17 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "BE_Score.",
+    "height":200,
+    "width": 200,
+    "data": {
+      "values": [
+        {"School Type": "NSW_PRI", "90+ Rate": 0.299471}, {"School Type": "NSW_SEC", "90+ Rate": 0.29712}, 
+        {"School Type": "WA_PRI", "90+ Rate": 0.355649}, {"School Type": "WA_SEC", "90+ Rate": 0.385593}
+      ]
+    },
+    "mark": "bar",
+    "encoding": {
+      "x": {"field": "School Type", "type": "nominal", "axis": {"labelAngle": 0}},
+      "y": {"field": "90+ Rate", "type": "quantitative"}
+    }
+  }
